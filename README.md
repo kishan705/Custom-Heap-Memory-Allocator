@@ -1,4 +1,12 @@
 # Custom Heap Memory Allocator (C, POSIX)
+![C](https://img.shields.io/badge/C-Systems-00599C.svg?logo=c&logoColor=white)
+![POSIX](https://img.shields.io/badge/POSIX-Standards-7f8c8d.svg)
+![Linux](https://img.shields.io/badge/Linux-OS-FCC624.svg?logo=linux&logoColor=black)
+![macOS](https://img.shields.io/badge/macOS-OS-000000.svg?logo=apple&logoColor=white)
+![Embedded Systems](https://img.shields.io/badge/Embedded_Systems-Hardware-9b59b6.svg)
+![RTOS](https://img.shields.io/badge/RTOS-Real_Time_OS-27ae60.svg)
+![ARM](https://img.shields.io/badge/ARM-Architecture-0091BD.svg?logo=arm&logoColor=white)
+![Memory Management](https://img.shields.io/badge/Memory_Management-System-e74c3c.svg)
 
 A custom dynamic memory allocation library for Unix-based systems (Linux/macOS), implementing custom `malloc()` and `free()` functions from scratch using system calls.
 
