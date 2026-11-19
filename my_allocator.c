@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <stddef.h>
+#include <stdint.h>
 #include "my_allocator.h"
 
 #define ALIGNMENT 8
@@ -38,7 +39,10 @@ struct block_meta *request_space(struct block_meta* last, size_t size) {
 }
 
 void *my_malloc(size_t size) {
-    if (size <= 0) return NULL;
+    if (size == 0) return NULL;
+    /* sbrk() takes a signed intptr_t: reject sizes that would wrap around in
+       ALIGN() or in size + META_SIZE, or turn negative when passed to sbrk() */
+    if (size > (size_t)INTPTR_MAX - META_SIZE - ALIGNMENT) return NULL;
     size_t aligned_size = ALIGN(size);
     struct block_meta *block;
 
