@@ -42,8 +42,8 @@ This project includes a `Makefile` to streamline the build process and silence m
 
 1. **Clone the repository and navigate to the directory:**
    ```bash
-   git clone <your-repo-link>
-   cd custom_allocator
+   git clone https://github.com/kishan705/Custom-Heap-Memory-Allocator.git
+   cd Custom-Heap-Memory-Allocator
    ```
 
 2. **Compile the library and benchmarking suite:**
