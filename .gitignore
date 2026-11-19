@@ -1,0 +1,5 @@
+benchmark
+test_allocator
+*.o
+*.dSYM/
+.DS_Store
